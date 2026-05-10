@@ -58,6 +58,6 @@
   url: https://chatgpt.com
   icon: icon-chatgpt
 
-- name: 豆包
-  url: https://www.doubao.com
-  icon: icon-doubao
+- name: DeepSeek
+  url: https://chat.deepseek.com
+  icon: icon-deepseek

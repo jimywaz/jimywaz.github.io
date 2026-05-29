@@ -22,21 +22,17 @@
   url: https://mail.qq.com
   icon: icon-qqmail
 
-- name: 网易邮箱
-  url: https://email.163.com
-  icon: icon-neteasemail
-
 - name: iCloud Mail
   url: https://www.icloud.com/mail
   icon: icon-icloudmail
 
-- name: Cloudflare
-  url: https://dash.cloudflare.com/login
-  icon: icon-cloudflare
-
 - name: Proton Mail
   url: https://proton.me/mail
   icon: icon-protonmail
+
+- name: Cloudflare
+  url: https://dash.cloudflare.com/login
+  icon: icon-cloudflare
 
 - name: Apple (CN)
   url: https://www.apple.com.cn
@@ -61,3 +57,7 @@
 - name: DeepSeek
   url: https://chat.deepseek.com
   icon: icon-deepseek
+
+- name: 网易邮箱
+  url: https://email.163.com
+  icon: icon-neteasemail

@@ -55,7 +55,7 @@
   icon: icon-chatgpt
 
 - name: DeepSeek
-  url: https://chat.deepseek.com
+  url: https://www.deepseek.com
   icon: icon-deepseek
 
 - name: 网易邮箱

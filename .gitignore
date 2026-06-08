@@ -144,3 +144,13 @@ nohup.out
 
 ## User settings
 xcuserdata/
+
+# ---------------- AI Agent ----------------
+
+CLAUDE.md
+## AGENTS.md
+GEMINI.md
+/.claude
+/.codex
+/.gemini
+/.cc-switch

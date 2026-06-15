@@ -1,4 +1,16 @@
 // Only for Index Page
+
+// Get Website Title
+fetch('data.json')
+  .then(res => res.json())
+  .then(data => {
+    const item = data[0];
+    document.title = `${item.title} - ${item.author}`;
+  })
+  .catch(error => {
+    console.error('Loading Fail:', error);
+  });
+
 // Get favicon from CSS
 document.addEventListener('DOMContentLoaded', () => {
   const elem = document.querySelector('.favicon-data');
@@ -51,4 +63,6 @@ fetch('data.json', { cache: 'no-cache' })
   .then(config => {
     // config loading
   })
-  .catch(error => console.error('Config Loading Fail:', error));
+  .catch(error => {
+    console.error('Config Loading Fail:', error);
+  });

@@ -2,7 +2,7 @@
 
 // Get Website Title
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('config.json')
+  fetch('/assets/config.json')
     .then(res => res.json())
     .then(data => {
       const item = data[0];
@@ -62,7 +62,7 @@ clearButton.addEventListener('click', () => {
 
 // Get Website Data
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('data.json', { cache: 'no-cache' })
+  fetch('/assets/data.json', { cache: 'no-cache' })
     .then(response => response.json())
     .then(config => {
       // config loading

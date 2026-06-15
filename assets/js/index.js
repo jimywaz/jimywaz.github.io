@@ -44,3 +44,11 @@ clearButton.addEventListener('click', () => {
   input.focus();
   clearButton.style.display = 'none';
 });
+
+// Get Website Data
+fetch('data.json', { cache: 'no-cache' })
+  .then(response => response.json())
+  .then(config => {
+    // config loading
+  })
+  .catch(error => console.error('Config Loading Fail:', error));

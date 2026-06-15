@@ -1,15 +1,17 @@
 // Only for Index Page
 
 // Get Website Title
-fetch('config.json')
-  .then(res => res.json())
-  .then(data => {
-    const item = data[0];
-    document.title = `${item.title} - ${item.author}`;
-  })
-  .catch(error => {
-    console.error('Loading Fail:', error);
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('config.json')
+    .then(res => res.json())
+    .then(data => {
+      const item = data[0];
+      document.title = `${item.title} - ${item.author}`;
+    })
+    .catch(error => {
+      console.error('Loading Fail:', error);
+    });
+};
 
 // Get favicon from CSS
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,11 +60,13 @@ clearButton.addEventListener('click', () => {
 });
 
 // Get Website Data
-fetch('data.json', { cache: 'no-cache' })
-  .then(response => response.json())
-  .then(config => {
-    // config loading
-  })
-  .catch(error => {
-    console.error('Config Loading Fail:', error);
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('data.json', { cache: 'no-cache' })
+    .then(response => response.json())
+    .then(config => {
+      // config loading
+    })
+    .catch(error => {
+      console.error('Config Loading Fail:', error);
+    });
+};

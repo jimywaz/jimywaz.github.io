@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(res => res.json())
     .then(data => {
       const item = data[0];
-      document.title = `${item.title} - ${item.author}`;
+      document.title = item.title + ' - ' + item.author;
+      document.getElementById('pageTitle').innerText = item.title;
     })
     .catch(error => {
       console.error('Loading Fail:', error);

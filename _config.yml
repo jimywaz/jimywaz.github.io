@@ -1,7 +1,0 @@
-title: 导航网站
-author: Jimmy Watt
-social:
-  github: https://github.com/jimywat
-theme: minima
-markdown: kramdown
-plugins: [jekyll-feed]

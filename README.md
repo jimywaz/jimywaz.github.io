@@ -1,2 +1,2 @@
-# jimywat.github.io
+# username.github.io
 Personalized Website Navigation

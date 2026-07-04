@@ -58,6 +58,6 @@
   url: https://www.deepseek.com
   icon: icon-deepseek
 
-- name: 网易邮箱
-  url: https://email.163.com
-  icon: icon-neteasemail
+- name: 菜鸟教程
+  url: https://www.runoob.com
+  icon: icon-runoob

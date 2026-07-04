@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }} - JimmyWatt</title>
+
+  <!-- Favicon -->
+  <link rel="icon" id="favicon" type="image/svg+xml">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/images.css">
+  <link rel="stylesheet" href="/assets/css/icons.css">
+</head>
+<body>
+  <!-- Read favicon from JS -->
+  <div class="favicon-data"></div>
+
+  <header>
+    <h1 id="pageTitle">Title</h1>
+  </header>
+
+  <main>
+    <!-- Search -->
+    <div class="search-wrapper">
+      <div class="search-input-box">
+        <input type="text" id="search-input" placeholder="搜索..." />
+        <div class="clear-button" id="clear-button"></div>
+      </div>
+
+      <div class="search-buttons">
+        <button class="baidu"><span>百</span><span>度</span></button>
+        <button class="bing"><span>B</span><span>i</span><span>n</span><span>g</span></button>
+        <button class="google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-container-wrapper">
+      <div class="nav-container">
+        {% for link in site.data.links %}
+        <a class="nav-item" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+          <div class="nav-icon {{ link.icon }}"></div>
+          <span>{{ link.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} 
+      <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer">
+        {{ site.author }}
+      </a>
+    </p>
+  </footer>
+
+  <script src="/assets/js/index.js"></script>
+
+</body>
+</html>
